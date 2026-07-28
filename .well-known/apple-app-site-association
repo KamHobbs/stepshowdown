@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "V2S7AVSLYB.com.kamhobbs.stepshowdown",
+        "paths": ["/invite/*"]
+      }
+    ]
+  }
+}
