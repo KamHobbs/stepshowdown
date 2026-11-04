@@ -1,0 +1,19 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["V2S7AVSLYB.com.kamhobbs.stepshowdown"],
+        "components": [
+          {
+            "/": "/invite/friend/*",
+            "comment": "Friend invite links"
+          },
+          {
+            "/": "/invite/challenge/*",
+            "comment": "Challenge invite links"
+          }
+        ]
+      }
+    ]
+  }
+}

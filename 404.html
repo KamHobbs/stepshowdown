@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<title>Step Showdown — Page not found</title>
+<style>
+  body { font-family: -apple-system, system-ui, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #1c1c1e; }
+  h1 { color: #7A2EF0; }
+  h2 { margin-top: 1.6em; }
+  a { color: #F53B9E; }
+  .muted { color: #6b6b70; font-size: 0.9em; }
+  .app-store-button { display: block; border-radius: 12px; background: #F53B9E; color: white; font-weight: 600; padding: 14px 24px; }
+  .app-store-button:focus-visible { outline: 3px solid #1c1c1e; outline-offset: 3px; }
+</style>
+</head>
+<body>
+<main>
+  <section id="not-found">
+    <h1>Page not found</h1>
+    <a href="/">Go to the Step Showdown homepage</a>
+  </section>
+  <section id="invite" hidden>
+    <h1>You've been challenged.</h1>
+    <p>A friend wants to see who racks up more steps. Game on.</p>
+    <p>Step Showdown turns your daily steps into head-to-head competitions with the people you actually know. No ads, no clutter. Just bragging rights.</p>
+    <a class="app-store-button" id="app-store-button">Get Step Showdown</a>
+    <p class="muted">Free to download. Works with just your iPhone.</p>
+    <p>Already have the app? Open it to join the showdown.</p>
+  </section>
+</main>
+<script src="/assets/site-config.js"></script>
+<script>
+  if (/^\/invite\/(friend|challenge)\/[^/]+\/?$/.test(window.location.pathname)) {
+    document.getElementById("app-store-button").href = window.STEP_SHOWDOWN_CONFIG.appStoreURL;
+    document.getElementById("not-found").hidden = true;
+    document.getElementById("invite").hidden = false;
+    document.title = "Step Showdown — You've been challenged";
+  }
+</script>
+</body>
+</html>
